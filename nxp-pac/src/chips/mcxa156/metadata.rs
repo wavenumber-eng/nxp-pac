@@ -15698,7 +15698,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "USB0",
         address: 0x400A4000,
-        driver_name: "",
+        driver_name: "MCXA156/USB::Usb",
         signals: &[Signal {
             name: "USB_VBUS_DET",
             pins: &[SignalPin {
@@ -15710,7 +15710,12 @@ pub const PERIPHERALS: &[Peripheral] = &[
         }],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: None,
+            bit: "usb0",
+        }),
     },
     Peripheral {
         name: "EQDC0",

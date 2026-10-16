@@ -12813,7 +12813,11 @@
           ]
         }
       ],
-      "pac_only": true
+      "gate": {
+        "enable": "mrcc_glb_cc0",
+        "reset": "mrcc_glb_rst0"
+      },
+      "pac_only": false
     },
     {
       "name": "EQDC0",
