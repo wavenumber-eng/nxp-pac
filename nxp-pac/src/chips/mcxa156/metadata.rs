@@ -15713,7 +15713,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         gate: Some(Gate {
             enable: "mrcc_glb_cc0",
             reset: Some("mrcc_glb_rst0"),
-            config: None,
+            config: Some("UsbfsConfig"),
             bit: "usb0",
         }),
     },

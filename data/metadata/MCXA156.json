@@ -12815,7 +12815,8 @@
       ],
       "gate": {
         "enable": "mrcc_glb_cc0",
-        "reset": "mrcc_glb_rst0"
+        "reset": "mrcc_glb_rst0",
+        "config": "UsbfsConfig"
       },
       "pac_only": false
     },
